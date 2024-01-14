@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root {
+    font-size: 24px;
+    font-family: 'Ubuntu Mono', monospace;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 200ms;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+
+}
+
+h1 {
+    color: var(--text-secondary);
+}
+
+input {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.table-headers {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text-secondary);
+}
+
+.assignment {
+    padding: 10px;
+    box-shadow: rgba(3, 8, 20, 0.5) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.5) 0px 0.075rem 0.175rem;
+    transition: ease-in-out var(--transition-speed);
+}
+
+.assignment:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    background-color: var(--bg-secondary);
+    transform: scale(105%, 105%);
+}
+
+.assignment input {
+    border: 1px solid grey;
+    border-radius: 2px;
+    outline: hidden;
+    outline-offset: 0;
+    outline-width: 0;
+    background: transparent;
+    color: #fff;
+    transition: all ease-in-out 200ms;
+
+}
+
+.assignment input:focus {
+    border: 1px solid magenta;
+    box-shadow: rgba(126, 25, 119, 1) 0px 0.15rem 0.5rem, rgba(84, 23, 75, 1) 0px 0.075rem 0.175rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.assignment input:focus::placeholder {
+    font-size: 0;
+}
+
+.assignment input:invalid {
+    border: solid 1px red;
+}
+
+input[type="button"]#r {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    border-radius: 25px;
+    box-shadow: rgba(3, 8, 20, 0.5) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.5) 0px 0.075rem 0.175rem;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    transition: all 200ms;
+}
+
+input[type="button"]#r:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    border-radius: 30px;
+    padding-bottom: 5px;
+    background-color: var(--bg-secondary);
+
+}
+
+input[type="button"]#r:active {
+    transform: scale(0.9, 0.9);
+    padding-bottom: 5px;
+}
+
+input#calculate {
+    background-color: rgb(7, 255, 118);
+    color: var(--bg-primary);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: rgba(3, 8, 20, 0.5) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.5) 0px 0.075rem 0.175rem;
+}
+
+input#reset {
+    background-color: rgb(255, 137, 40);
+    color: var(--bg-primary);
+    border: none;
+    font-size: 18px;
+    box-shadow: rgba(3, 8, 20, 0.5) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.5) 0px 0.075rem 0.175rem;
+}
+
+input[readonly="true"] {
+    font-size: 18px;
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    padding-left: 5px;
+    border:magenta solid 1px; 
+}
+
+
+div.avg {
+    font-size: 20px;
+    padding: 10px;
+    transform: translateY(1px);
+    border: magenta solid 1px;
+    border-radius: 5px;
+    background-color: var(--bg-secondary);
+    box-shadow: rgba(126, 25, 119, 1) 0px 0.15rem 0.5rem, rgba(84, 23, 75, 1) 0px 0.075rem 0.175rem;
+}

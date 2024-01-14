@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GradeCalc</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>GradeCalc</h1>
+    
+        <form class="grade-table" id="gt">
+            
+            <div class="table-headers">
+                <p>Assignment</p>
+                <p>Grade</p>
+                <p>Weight</p>
+            </div>
+            
+            <div class="assignment">
+                <input type="text" name="title" id="1" placeholder="name">
+                <input type="text" inputmode="numeric" name="grade" id="2" placeholder="grade (%)">
+                <input type="text" inputmode="numeric" name="weight" id="3" placeholder="weight">
+            </div> 
+            <div class="assignment">
+                <input type="text" name="title" id="1">
+                <input type="text" inputmode="numeric" name="grade" id="2">
+                <input type="text" inputmode="numeric" name="weight" id="3">
+            </div> 
+            <div class="assignment">
+                <input type="text" name="title" id="1">
+                <input type="text" inputmode="numeric" name="grade" id="2">
+                <input type="text" inputmode="numeric" name="weight" id="3">
+            </div>
+            <div class="assignment">
+                <input type="text" name="title" id="1">
+                <input type="text" inputmode="numeric" name="grade" id="2">
+                <input type="text" inputmode="numeric" name="weight" id="3">
+            </div>
+
+        </form>
+        
+        <input type="button" value="+" id="r" onclick="addAssignmentRow()">
+        <br>
+
+        <div class="calc-reset">
+            <input type="submit" id="calculate" value="Calculate Grade" onclick="getWeightedGrade()">
+            <input type="button" id="reset" value="Reset" onclick="resetTable()">
+        </div>
+
+        <div class="avg">
+            <label for="avg">Average Grade:</label>
+            <input type="text" name="avg" readonly="true" onmousedown="return false" style="cursor: default;" id="weighted-avg">
+        </div>
+
+        <input type="button" class="debug-button" value="Fill table" onclick="fillTable()">
+
+        <script src="main.js"></script>
+    </body>
+</html>
