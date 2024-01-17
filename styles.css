@@ -13,6 +13,8 @@
 body {
     background: var(--bg-primary);
     color: var(--text-primary);
+    box-shadow: rgba(3, 8, 20, 0.5) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.5) 0px 0.075rem 0.175rem;
+    padding: 1rem;
 
 }
 
